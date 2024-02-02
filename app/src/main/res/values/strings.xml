@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QRGenerator</string>
+
+    <array name="simple_items">
+        <item>AZTEC</item>
+        <item>QR_CODE</item>
+        <item>CODE_39</item>
+        <item>CODE_93</item>
+        <item>CODE_128</item>
+        <item>DATA_MATRIX</item>
+        <item>PDF_417</item>
+    </array>
+    
+</resources>

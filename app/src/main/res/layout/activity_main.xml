@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:gravity="center_horizontal"
+     android:padding="16dp"
+     android:orientation="vertical"
+     tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         app:boxCornerRadiusTopEnd="8dp"
+         android:hint="Jenis Code"
+         android:padding="5dp"
+         app:boxCornerRadiusBottomStart="8dp"
+         app:boxStrokeWidthFocused="1.5dp"
+         app:boxCornerRadiusBottomEnd="8dp"
+         style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+         app:boxCornerRadiusTopStart="8dp">
+
+        <AutoCompleteTextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:inputType="none"
+             android:id="@+id/autoCompleteTextView"
+             app:simpleItems="@array/simple_items" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         app:endIconMode="clear_text"
+         app:boxCornerRadiusTopEnd="8dp"
+         android:hint="Masukkan Text"
+         android:padding="5dp"
+         app:boxCornerRadiusBottomStart="8dp"
+         app:boxStrokeWidthFocused="1.5dp"
+         app:boxCornerRadiusBottomEnd="8dp"
+         app:boxCornerRadiusTopStart="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:singleLine="true"
+             android:inputType="text"
+             android:id="@+id/editText" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_margin="5dp"
+         android:textColor="@android:color/white"
+         style="@style/Widget.Material3.Button"
+         android:id="@+id/btnGenerate"
+         android:text="Generate"
+         android:textStyle="bold" />
+
+    <ImageView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:scaleType="fitCenter"
+         android:adjustViewBounds="true"
+         android:layout_margin="10dp"
+         android:id="@+id/imageViewResult" />
+
+</LinearLayout>
